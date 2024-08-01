@@ -41,23 +41,14 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             self.nameLabel.text = dragonballData.name
             self.kiLabel.text = dragonballData.ki
             self.raceLabel.text = dragonballData.race
-            print(dragonballData.image)
             let url = URL(string: dragonballData.image)
-            self.load(url: url!)
+            
+            let data = try? Data(contentsOf: url!)
+            let image = UIImage(data: data!)
+            self.imageView.image = image
         }
     }
     
-    func load(url: URL) {
-        DispatchQueue.global().async { [weak self] in
-            if let data = try? Data(contentsOf: url) {
-                if let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        self?.imageView.image = image
-                    }
-                }
-            }
-        }
-    }
     
     func matchName(name: String) -> String {
         switch name {
