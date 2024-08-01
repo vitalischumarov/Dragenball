@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910C591B2C5BD2D7002D23A5 /* DragonballManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C591A2C5BD2D7002D23A5 /* DragonballManager.swift */; };
+		910C591D2C5BE164002D23A5 /* DragonballDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C591C2C5BE164002D23A5 /* DragonballDelegate.swift */; };
 		91EA2EFE2C5BAF96007A0DF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EA2EFD2C5BAF96007A0DF5 /* AppDelegate.swift */; };
 		91EA2F002C5BAF96007A0DF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EA2EFF2C5BAF96007A0DF5 /* SceneDelegate.swift */; };
 		91EA2F022C5BAF96007A0DF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EA2F012C5BAF96007A0DF5 /* ViewController.swift */; };
 		91EA2F052C5BAF96007A0DF5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 91EA2F042C5BAF96007A0DF5 /* Base */; };
 		91EA2F072C5BAF97007A0DF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91EA2F062C5BAF97007A0DF5 /* Assets.xcassets */; };
 		91EA2F0A2C5BAF97007A0DF5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 91EA2F092C5BAF97007A0DF5 /* Base */; };
+		91EA2F152C5BB4E2007A0DF5 /* Character_Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EA2F142C5BB4E2007A0DF5 /* Character_Names.swift */; };
+		91EA2F172C5BBB80007A0DF5 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EA2F162C5BBB80007A0DF5 /* CharacterModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		910C591A2C5BD2D7002D23A5 /* DragonballManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonballManager.swift; sourceTree = "<group>"; };
+		910C591C2C5BE164002D23A5 /* DragonballDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonballDelegate.swift; sourceTree = "<group>"; };
 		91EA2EFA2C5BAF96007A0DF5 /* Dragenball_Characters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dragenball_Characters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EA2EFD2C5BAF96007A0DF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91EA2EFF2C5BAF96007A0DF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		91EA2F062C5BAF97007A0DF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91EA2F092C5BAF97007A0DF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91EA2F0B2C5BAF97007A0DF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91EA2F142C5BB4E2007A0DF5 /* Character_Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character_Names.swift; sourceTree = "<group>"; };
+		91EA2F162C5BBB80007A0DF5 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +67,9 @@
 				91EA2F132C5BAFBB007A0DF5 /* Controller */,
 				91EA2F122C5BAFB6007A0DF5 /* View */,
 				91EA2F112C5BAFAE007A0DF5 /* Model */,
+				91EA2F012C5BAF96007A0DF5 /* ViewController.swift */,
 				91EA2EFD2C5BAF96007A0DF5 /* AppDelegate.swift */,
 				91EA2EFF2C5BAF96007A0DF5 /* SceneDelegate.swift */,
-				91EA2F012C5BAF96007A0DF5 /* ViewController.swift */,
 				91EA2F032C5BAF96007A0DF5 /* Main.storyboard */,
 				91EA2F062C5BAF97007A0DF5 /* Assets.xcassets */,
 				91EA2F082C5BAF97007A0DF5 /* LaunchScreen.storyboard */,
@@ -73,6 +81,9 @@
 		91EA2F112C5BAFAE007A0DF5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				91EA2F142C5BB4E2007A0DF5 /* Character_Names.swift */,
+				91EA2F162C5BBB80007A0DF5 /* CharacterModel.swift */,
+				910C591C2C5BE164002D23A5 /* DragonballDelegate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -87,6 +98,7 @@
 		91EA2F132C5BAFBB007A0DF5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				910C591A2C5BD2D7002D23A5 /* DragonballManager.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -162,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91EA2F152C5BB4E2007A0DF5 /* Character_Names.swift in Sources */,
+				91EA2F172C5BBB80007A0DF5 /* CharacterModel.swift in Sources */,
 				91EA2F022C5BAF96007A0DF5 /* ViewController.swift in Sources */,
+				910C591B2C5BD2D7002D23A5 /* DragonballManager.swift in Sources */,
 				91EA2EFE2C5BAF96007A0DF5 /* AppDelegate.swift in Sources */,
+				910C591D2C5BE164002D23A5 /* DragonballDelegate.swift in Sources */,
 				91EA2F002C5BAF96007A0DF5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
