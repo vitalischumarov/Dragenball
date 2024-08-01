@@ -42,7 +42,20 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             self.kiLabel.text = dragonballData.ki
             self.raceLabel.text = dragonballData.race
             print(dragonballData.image)
-
+            let url = URL(string: dragonballData.image)
+            self.load(url: url!)
+        }
+    }
+    
+    func load(url: URL) {
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self?.imageView.image = image
+                    }
+                }
+            }
         }
     }
     
